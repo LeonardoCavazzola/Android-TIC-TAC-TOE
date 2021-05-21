@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <ImageButton
+            android:id="@+id/p1Button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="p1Click"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintEnd_toStartOf="@+id/p2Button"
+            android:layout_marginEnd="8dp" android:src="@drawable/p11"/>
+    <ImageButton
+            android:id="@+id/p2Button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:onClick="p2Click"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:src="@drawable/p22"/>
+
+    <ImageButton
+            android:id="@+id/btnPlayerClear"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars" android:onClick="clearAll"
+            app:layout_constraintStart_toEndOf="@+id/p2Button"
+            android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp" android:src="@drawable/cc"/>
+    <ImageButton
+            android:id="@+id/a1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintEnd_toStartOf="@+id/a2"
+            android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/guide"
+    />
+    <ImageButton
+            android:id="@+id/b1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/a1"
+            app:layout_constraintEnd_toStartOf="@+id/b2" android:layout_marginEnd="8dp"/>
+    <ImageButton
+            android:id="@+id/a3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintStart_toEndOf="@+id/a2"
+            android:layout_marginStart="8dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/guide"/>
+    <ImageButton
+            android:id="@+id/b3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/a3" app:layout_constraintStart_toEndOf="@+id/b2"
+            android:layout_marginStart="8dp"/>
+    <ImageButton
+            android:id="@+id/b2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/a2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageButton
+            android:id="@+id/c3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b3" app:layout_constraintStart_toEndOf="@+id/c2"
+            android:layout_marginStart="8dp"/>
+    <ImageButton
+            android:id="@+id/c2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b2" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <ImageButton
+            android:id="@+id/c1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b1" app:layout_constraintEnd_toStartOf="@+id/c2"
+            android:layout_marginEnd="8dp"/>
+    <ImageButton
+            android:id="@+id/a2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/guide"/>
+    <TextView
+            android:id="@+id/guide"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp" android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
